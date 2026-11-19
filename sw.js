@@ -1,5 +1,5 @@
 const prefix = 'oliver-english-';
-const cacheName = prefix + 'v1';
+const cacheName = prefix + 'v2';
 const assets = ['./', './index.html', './manifest.webmanifest', './pwa.js', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(cacheName).then(cache => cache.addAll(assets)));
